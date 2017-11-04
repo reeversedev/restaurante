@@ -1,0 +1,45 @@
+<h3 class="title">Top Restaurants near you</h3>
+<div class="columns">
+  <div class="card" *ngFor="let restaurant of restaurants">
+    <div class="column">
+      <div class="card-image">
+        <figure class="image">
+          <img src="{{restaurant.photo_link}}" alt="{{restaurant.name}}" height="80">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-4">{{restaurant.name}}</p>
+            <p class="subtitle is-6">{{restaurant.address}}</p>
+          </div>
+        </div>
+        <div class="content">
+          <div class="right">
+            Payment:
+            <br>
+            <a>Cash: {{restaurant.cash}}</a>
+            <br>
+            <a>Card: {{restaurant.card}}</a>
+            <br>
+            <a>E-Wallets: {{restaurant.e_wallet}}</a>
+          </div>
+          <time datetime="2016-1-1">
+            <span>Opening Hours: </span>{{restaurant.opening}} - {{restaurant.closing}}</time>
+          <div class="content-right">
+            Cuisines: {{restaurant.cuisines}}
+          </div>
+          <footer>
+            <div class="card-footer">
+              <div class="card-footer-item">
+                <span>
+                  <a class="">Book a Table</a>
+                </span>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

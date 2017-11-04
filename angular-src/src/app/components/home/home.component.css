@@ -1,0 +1,11 @@
+.card {
+  margin: 10px;
+  width: 30%!important;
+}
+
+.card-footer {
+  background-color: crimson;
+}
+.card-footer a {
+    color: whitesmoke;
+}
